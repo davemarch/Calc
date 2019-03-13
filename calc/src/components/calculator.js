@@ -3,6 +3,7 @@ import CalculatorTitle from './calculatorTitle.js';
 import OutputScreen from './outputScreen.js';
 import Button from './button.js';
 
+
 // https://www.geeksforgeeks.org/reactjs-calculator-app-adding-functionality/
 
 class Calculator extends React.Component { 
@@ -59,8 +60,9 @@ handleClick(event) {
 
             case 'Delete': {
               var str = this.state.question;
-              str = str.substr(0, str.length-1);
+              str = str.substr(0,str.length-1);
               this.setState({question: str});
+              break;
             }
 
             default: {
@@ -75,9 +77,9 @@ handleClick(event) {
     { 
     return ( 
     <div className="frame"> 
-    <CalculatorTitle value="Dave's Calculator"/> 
-    <div className="mainCalc"> 
-    <OutputScreen answer = {this.state.answer} question = {this.state.question}/> 
+        <div className="mainCalc"> 
+    <CalculatorTitle value="Casio"/> 
+    <OutputScreen className="screen" answer = {this.state.answer} question = {this.state.question}/> 
     <div className="button-row"> 
       <Button label={'Clear'} handleClick = {this.handleClick}/> 
       <Button label={'Delete'} handleClick = {this.handleClick}/> 
