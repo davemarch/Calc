@@ -38,7 +38,7 @@
 }
 
 .screen {
-width: 400px; 
+width: 90%; 
 margin: 0 auto 20px auto;
 box-shadow:  inset 0px 0px -100px white;
 }
@@ -46,7 +46,7 @@ box-shadow:  inset 0px 0px -100px white;
 
 .screenrow input{ 
 font-family: 'Orbitron';
-width: 400px; 
+width: 100%; 
 border: 0px; 
 color: #383A2E; 
 padding: 10px; 
@@ -58,13 +58,13 @@ background: #a4af87;
 
 
 input[type="button"]{ 
-    height: 100px;
-    width: 100px;
+    font-size: 80%;
     background: black; 
     border: 1px solid #222; 
     color: white; 
     text-align: center; 
     border-radius: 50%;
+    width: 25%;
     
   } 
     
@@ -72,6 +72,13 @@ input[type="button"]{
       background: #ccc; 
   } 
 
+  .button-row{
+      display: flex;
+      flex-direction: row;
+      margin: 0 15%;
+      height: 13%; 
+
+  }
 
 
 
